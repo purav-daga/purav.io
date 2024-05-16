@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #8ec5e5, #e0fbfc);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 20px;
+        }
+
+        video {
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        .video-controls {
+            margin-top: S20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The Pout Queen!</h1>
+    <video controls controlsList="nodownload">
+        <source src="Vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="video-controls">
+        <button onclick="playPause()">Play/Pause</button>
+        <button onclick="muteUnmute()">Mute/Unmute</button>
+        
+    </div>
+
+    <script>
+        var video = document.querySelector('video');
+
+        function playPause() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+
+        function muteUnmute() {
+            if (video.muted) {
+                video.muted = false;
+            } else {
+                video.muted = true;
+            }
+        }
+    </script>
+</body>
+
+</html>
