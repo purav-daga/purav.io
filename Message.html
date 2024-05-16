@@ -10,21 +10,27 @@
             color: white;
         }
 
-        body {
+        html, body {
             margin: 0;
             padding: 0;
-            height: 100vh;
+            height: 100%;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        body {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             background: linear-gradient(to top, #74ebd5, #acb6e5);
-            /* Change the gradient colors */
-            /* Change the colors and direction as needed */
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
         h1 {
             text-align: center;
         }
+
         #video-container {
             margin-top: 20px;
             display: flex;
@@ -34,7 +40,6 @@
         video {
             height: 200px;
             width: auto;
-            
         }
     </style>
 </head>
@@ -43,21 +48,21 @@
     <h2>Heroooo has a message for her Heavy Burden</h2>
     <p>She's my heavy burden tooo.One of my favourite form of her. <br>
         Its her Cutest side I've ever seen. <br>
-        Heavy Burden means she can act like a kid, I gotta help her in little stuff too, <br>
+        Heavy Burden means she can act like a kid, I gotta help her in her little stuff too, <br>
         I have to take care of her,make sure she doesn't get into trouble
-        and to pamper her and do a lot of her stuff with/without her. <br>
+        and I gotta pamper her and do her stuff with/without her. <br>
         This is completely different side of her and I never imagined that I would see this side. <br>
-        If high She becomes more clumsy,more talkative,if you make her angry it's hard to settle the things. <br>
+        If she is high, She becomes more clumsy,more talkative and if you make her angry it's hard to settle the things. <br>
         But still I like her as my heavy burden because it gives me a chance to take care of her,
-        to pamper her and to listen to her talks and to repay her but I'll get pampered by her tooo in this form
-        a lot more than I will pamper her thus she increases the gap again!! <br>
+        to pamper her and to listen to her talks and to repay her but still I'll get pampered by her.She'll do my laad and pamper me more
+        in this form a lot more than I will pamper her thus she increases the gap again!! <br>
         And I know she enjoys this a lot because she is teasing me in a way but still she'd be my heavy burden forever,
         (what option do I've,I signed up for it you know,just kidding 😂), 
         it's really fun to handle this side of her which I enjoy a lottttttt!</p> 
 
-        <div id="video-container">
-            <video src="V2.mp4" loop autoplay muted></video>
-        </div>
+    <div id="video-container">
+        <video src="V2.mp4" loop autoplay muted></video>
+    </div>
 </body>
 
 </html>
